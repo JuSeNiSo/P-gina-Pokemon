@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="body">
+      <header>
+        <div id="tittle-page">
+          <img
+            id="img-title"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+            alt="Titulo Pokemon"
+          />
+        </div>
+      </header>
+      <div class="section1">
+        <main>
+          <hr id="line-div" />
+          <section>
+            <div id="search-div">
+              <form action="" type="get" id="form-search">
+                <input type="search" size="95" placeholder="Search..."  id="input-search"/>
+                <button title="send" id="search-button" dir="search.js">
+                  <img
+                    id="image-button"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAwFBMVEUAAADtVWT////19/pDSlQMDAzy9Pf6+voZHCDnU2IlJSUFBQXc3Nzp6ekzMzMqKysaGhoRERFwcHBQUFAsMDcjJyw+P0Dj4+NIGh5HR0c2PEQyNz9ubnCysrKIiIiYN0DISFQoDhEwERRWVlZqJi18LDR6e30UFhnHycvR09afoKKRkZGpqam+vr4hDA5eIiiOMzylO0W+RFAWCAlOHCFhYmOyQEvWTVovERQkDQ+CLzc9FhqWNj/PSldWHyRmJSsa4dZDAAALCElEQVR4nMVb6XqiShAl8YILKq4gLuhoNG4kMQbN6CTz/m91m67qplmExug35884RroOtfemPF6D6mjTmplGo6kqitpsGOastRlVrxpKyfuAtW3VidgkqPXW1rorgeKoVUmWHcBoucX7ECiOvGaWdEDTG8lzkCVgOQ056YDGQtYj5Ai47ZiIl97r03z+Nh6/zedPr72X2A/ay5sRGNVDI+97892k/BBBebKb9/ahH9ruTQi4oni9d3qPihbxfurpws/NbApZBKy2KH1c5q97eu1Nf73s9f08qopxTzREVlymEyg6QchP345UwHH39BnS9Dimh+Nb8AvVSY+IVAKuwcc5H+jQk4hwH69Jtjic+d+NVDukECi2+Bgf1PDH+a+YdIKoDZg7fPBftFKUcJmAxZ3vPIm8UwjTWEAwTPgTxio/gRFLe/udP9huGpGrT79pHjhclE8wZnGpbvMSYOrXn3wB49+i7H3vdDimiBVQfmJR2cpFoDjDx3752n8XlX9OTwRxOzC/mSU7QiIBzcaHvsnrl+dBavk9/8olnSrhLz5sarIEauh+uh/huyC9fuR7d44/+Ab1mhwBqxKov/zEne57cp34h8AMlYQSGSdQQ/ln4mdf3Pe/8+tewBHHqcR1ECOgof57xPw7Zv1fh5+IJyhjfajH/CBKoIj+90rkvzHtn9JiXZLBK4xlR2MhSgDj74k8MxdD8edAb5qlE8D849cXpEx1cRPggK00AiOMN/LzDyEUbwQccnSZgAX5/1zmdPdXhn4iypBRm9VLBIoQAL/L3GAvPwq+OAMoKWbxAgFwAJ343Ankf0qWHGlMIK4XyQRckEqMvruTfFJWYWQ3iUDRYAH4Ben/5fbyHx6gMhnFBAIOBH35oQxt3/629keUoSw4cQIW9L/vLAD026SfGN7p6KoVI9BmBkAH+HMf+SzAZlECLovAMjjA33vJZ7HoRgiY9NsDM8DlVvfnABWbYQKggDNpvu/qAICzqAIkYDMPhM7hwlzjRgA/tEUCS/rVN1PP5x0N4AOq0lIgACEwYQ5yywqUhAmV0g4IVOkXPdK/0g8fd5b/8AANWpUTWLAQ+HV/D6Q4BDXJJ1Ck60+f7Pv7pYAA9E0bRSQAfdAb04x8DTi+H3a7w/sVRQv63RES8Kjiy+gbkh7wdQqWpPa9t5yV60gbAw8IFJsod85cIRPlP7HFgvOfXLFLld0sUgJgAdKH/EZXyMRbfFWQ4OUtB4Exy4YKdmLEApCgTpnPvkfXKjim8gmkTG3QogQqmASe5FzwpF+S78+hpBlQGxg+AYu9OA2Ncxbzby7tudvp/0fQ75SCxTzpaQz0vRYhsKWfJg9HGQuwSaail6hwhn6JMehJMgCDbwkB6gJ7VofSsyCXX/ovCk6hJ6mCPTiB8khnIx/Yr+7TH8LVFn0Qk08wQOeQzKS0JNYJAWo/0gB8IpEUYFffTBLvA1f25KaTNOuojwpUwh3GRWooQ/pSngO1d7qlErqiwGAvlZvB5FUF0tDXw4T+m5oGoY9QmbQu9321y76Dr6SyOQgcKRtqVEYojTu2i/i+ndDWmdpBnYCSpBIS/elGgSDYfc0zfRDSP0rqKhGgEjqykfAF638tZSaOktaNT0QHKCkxlEQ3SInm8vtu/v3J0ulMMcPDvJxf5+PDMYEIZOpB+P0N2+Z7CqCDAf38lCD4eBjPX8/hbSUi3lASsZ9+/D2ND5OACn0SIrAPv1EX1QJBdYHu0A9U8BKInRzGp78f032yHEPJ3A7UX6Y9f2We/gc84BmeXRUQK3iLpuAF8/nTd2/6klK4AA1FcjcUIWi5YhU4cHUX7JNrwKZC1dfpD7qlZiZdzAHggcuCAJjalYRckAa9WeoO+lRVqkKldoTUlsYDJNAftAsh0KmNfilCRMk8cVICOhAodcLFdUCIPKtxJt3ABbdhAmv6ZT8xRSi6+kwED8IyOiUgwBQWIsd/5VMh+Z6R6QQEqmEC1YBAhwstdX2xsUFFNatRJ6Q8BtFnmGt1AgFamIAW/Xt8BKrXqIGbl8JQb4LW+nECEARWmAA0doPAtiEllp4veVbjUiISqKg+ly4dQPABN0wAwiDwAb3rS01wowiMaCpORylQxjBMYEi/zIqCOEwoRnZ15Hj17JwEpYgmQjVkA1jkE/6cKXi7oqsyMyjHFRzGXS9maTz0IIDDiQBWODqBgpIfb5izxZpydQoFmj1b2JCEfLq2Gq0Xnl1P8E9ItmDZIX9IGwr0BvGnng3bW6zdqha467agYUMCLdmqkAStuhytN4vhjJCBfFESVKCYmI2X6EcdwQXUhmG2vZazHi2r4YhlAlf03xE2paNEAiGAlvshM9cX6/WC7bKDB/Tj9gnDQZUDEQvbciebwFZQQVLBwWa1lPVC1OvrhQJdF1LZxMTOJqBVBBX0YwzUvqCAinZ5HKo9EsQ0CEw2NWumPMFA3ZXPSiLRzuZqQGxzeZQl80EabC0+OV1efoSroB4SNRDCtTkI0aqnvA5sS1iMCJ+ep3AOyEP48VlIv0uqJKl6XV4woBLraW9DI8Zg+rT4AoWEE7B8GzCIAjuBYcoQEHQLdAFDWKKpSRDQzLDBI8DgNNP8CSywKtSEJRoIyLWMCtjRAjVhfj7AwKhYaSMYaAHooFxhmS4ldQhYsfT8HKEwYLmpkZxUES6zAE1ruEwHC5WqjA2IDXn/oHY5h0EwUTaqqY9D70osQB/wQku1MnFAUBMbCPWZQMxJdvprQP5vM1cYhRarDTkCBc252PirTkY+80AulmK+WI3L9RIFCVCNn6+EN0tXP1GAjm8KOl9ENizk3JBi6cWaPd3LTqZAfM0+BBsWj8w35GE5psBBN53U4ANACBgaplRhywY3rXKowIfmbhbebOYtNq5EKeO1ZMsUIG5a4badmz3KDwCeZjJNhLbtcOPSvKd8LGUu1qPIxiVu3UoHQn6gAYYsBCJbt6iCilw6vAaQAhq1Ah4Vi25e495lWiX9EaD4+CqGmt5+jBKAuU1qL/EDLCF7esQDqSvo1RgBPMJhSEVUXmARJa2aZgRJMEIAD7HcwwjYRjRXzBUqWgIBdoxHqjPJhZrBHQBdIfEYDzvIpObJyDJgLYTDXUE8zxY6ymXcIxZX2Ma1CiwCjUtHuR5XQDC1q8yLJU4fPN7TqqFj1uHjfDBJUdq3Y7DG7mVGAgDbiPAh6+QDjd6NxNfA6cmAGguA9AON/EjnbYJxxTpY0gazWU3GkU5+qNX7uRV486iTflfD98881MqP9Wb0t9kYsTtRTdKC1PC9so/1Bgeb6xJN1mWseONaJ60qu6sgc7CZtKjIwLg+Iy1nvGFsaUEqkDvaHRxuV6/MysK1qIbf4rBQlD3cLhzvn+V3hKoT3IfThzW+hpfneL9wwcHI1R9oS0e8FWX6NlwyPnkuODwKVzxakkqwXMcOrbEavgFrw+uueDwKl1waaZ6gueuNsxjOYncg63RHZc1m8/kvuZAejU+DzYt2qNWVRNi0vV7yEa655kMcYcEHbF+gsEiSbjh0kirEwnUXnR5DV73MxCmDFxWu1xfAdRQsI1x91esxfNmtvomnxnVY+HALHmttAtP86LIbgSXsruv2OhoSTkNvVoy67TmjFZav2toW5s2zn1338+GG1mRsZ5lSJ0kisMV4uMGFR0rBVkQ0bWe7irHQVttIIrjVlU8fy9iijF6xveHC2axpHvDsSmzJ5IaXXn3842u/Pv7xxWfg4LYy9znvd/UbYW1b5qXL7+a9L79z3PD6//9ipBV9QOJHnwAAAABJRU5ErkJggg=="
+                    alt="pokebola"
+                  />
+                </button>
+              </form>
+            </div>
+          </section>
+          <section class="section_table">
+            <div class="table-div">
+            <table id="table">
+              <thead id="table_head">
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+            <script src="myscript.js"></script>
+          </div>
+          </section>
+
+          <br /><br />
+        </main>
+      </div>
+    </div>
+    <footer>
+      <nav class="nav_footer">
+        <a class="nav-link" aria-current="page" href="#">Informacion</a>
+        <a class="nav-link" href="#">Pokemon world</a>
+      </nav>
+    </footer>
+  </body>
+</html>
